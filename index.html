@@ -3,54 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenue sur mon blog GitHub Pages</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em 0;
-    }
-    main {
-      padding: 2em;
-      text-align: center;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-  </style>
+  <title>Bienvenue sur mon blog</title>
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font Awesome pour les icônes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <header>
+  <!-- Menu de navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
     <h1>Bienvenue sur mon blog</h1>
+    <p>Découvrez des articles passionnants sur divers sujets !</p>
   </header>
 
-  <main>
-    <h2>Merci de visiter mon site GitHub Pages !</h2>
-    <p>Ceci est un exemple simple d'un site statique hébergé sur GitHub Pages.</p>
-    <p>Tu peux personnaliser cette page en modifiant ce fichier `index.html`.</p>
-    <p>Pour plus d'infos, visite la <a href="https://docs.github.com/en/pages" target="_blank">documentation GitHub Pages</a>.</p>
-  </main>
+  <!-- Section À propos -->
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis passionné de technologies et j'écris des articles sur différents sujets, principalement liés à la programmation et à l'IA.</p>
+  </section>
 
+  <!-- Formulaire de contact -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contactForm">
+      <label for="name">Nom :</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+      
+      <input type="submit" value="Envoyer">
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <!-- Pied de page avec des icônes de réseaux sociaux -->
   <footer>
-    <p>&copy; 2025 Mon Blog - Tous droits réservés</p>
+    <p>&copy; 2025 Mon Blog</p>
+    <p>Suivez-moi sur :</p>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
   </footer>
+
+  <!-- Lien vers le fichier JavaScript externe -->
+  <script src="js/script.js"></script>
 </body>
 </html>
